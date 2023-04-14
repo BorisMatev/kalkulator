@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+}
+.output{
+    height: 20%;
+    background-color: rgb(39, 39, 39);
+}
+.input{
+    height: 15%;
+    background-color: rgb(79, 79, 79);
+}
+.keyboard{
+    height: 65%;
+    background-color:rgb(61, 61, 61);
+}
