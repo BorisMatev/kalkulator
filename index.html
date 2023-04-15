@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Калкулатор</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="main">
-        <div class="output"></div>
 
-        <div class="input"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Калкулатор</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="keyboard">
-          <button id="back">&lArr;</button>
-          <button>(</button>
-          <button>)</button>
-          <button>mod</button>
-          <button>п</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>&divide;</button>
-          <button>&#8730;</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>&times;</button>
-          <button>x<sup>2</sup></button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>&minus;</button>
-          <button>0</button>
-          <button>.</button>
-          <button>&percnt;</button>
-          <button>&plus;</button>
-          <button id="equals">&equals;</button>
-        </div>
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="output">
+        <h1></h1>
+      </div>
+
+      <div class="input">
+        <input type="text" id="input">
+      </div>
+
+      <div class="keyboard">
+        <button id="back" onclick="back()">&lArr;</button>
+        <button onclick="skoba()">(</button>
+        <button onclick="skoba2()">)</button>
+        <button onclick="mod()">mod</button>
+        <button>п</button>
+        <button onclick="seven()">7</button>
+        <button onclick="eight()">8</button>
+        <button onclick="nine()">9</button>
+        <button>&divide;</button>
+        <button>&#8730;</button>
+        <button onclick="four()">4</button>
+        <button onclick="five()">5</button>
+        <button onclick="six()">6</button>
+        <button>&times;</button>
+        <button>x<sup>2</sup></button>
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="three()">3</button>
+        <button>&minus;</button>
+        <button onclick="zero()">0</button>
+        <button>.</button>
+        <button>&percnt;</button>
+        <button onclick="sub()">&plus;</button>
+        <button onclick="equals()" id="equals">&equals;</button>
       </div>
     </div>
+  </div>
 
-    <script src="main.js"></script>
-  </body>
+  <script src="main.js"></script>
+</body>
+
 </html>
