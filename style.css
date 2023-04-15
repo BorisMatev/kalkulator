@@ -1,27 +1,64 @@
+body{
+    background-image: url("./images/th.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
 .main{
     height: 500px;
     width: 400px;
     border: 1px solid black;
 }
+
 .output{
     height: 20%;
     background-color: rgb(39, 39, 39);
 }
+
 .input{
     height: 15%;
     background-color: rgb(58, 58, 58);
 }
+
 .keyboard{
     height: 65%;
     background-color:rgb(77, 77, 77);
+    gap: 3px;
+    padding: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+button{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    cursor:pointer;
+}
+
+#back{
+    background-color: red;
+}
+
+#equals{
+    background-color: rgb(44, 207, 44);
+    display: flexbox;  
+    justify: flex-end;
+    grid-auto-flow: inherit;
 }
