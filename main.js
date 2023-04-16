@@ -123,3 +123,7 @@ function power() {
 }
 
 // End of Special Symbols
+
+// Output
+
+let output = document.getElementById('output').innerHTML = console.log(eval(inputString));
