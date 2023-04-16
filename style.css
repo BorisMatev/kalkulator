@@ -85,6 +85,4 @@ button{
 #equals{
     background-color: rgb(44, 207, 44);
     display: flexbox;  
-    justify: flex-end;
-    grid-auto-flow: inherit;
 }
