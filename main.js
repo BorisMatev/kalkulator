@@ -2,19 +2,17 @@ let inputString = "";
 
 let input = document.getElementById('input');
 
-function back(){
-    inputString = inputString.slice(0,-1);
-    input.setAttribute('value', inputString);
-}
-
 function skoba() {
-    inputString += ' ( ';
+    inputString += ' (';
     input.setAttribute('value', inputString);
 }
 function skoba2() {
-    inputString += ' ) ';
+    inputString += ') ';
     input.setAttribute('value', inputString);
 }
+
+// Numbers
+
 function one() {
     inputString += '1';
     input.setAttribute('value', inputString);
@@ -55,9 +53,19 @@ function zero() {
     inputString += '0';
     input.setAttribute('value', inputString);
 }
+
+// End of Numbers
+
+// Math Functions
+
 function mod() {
     inputString = "";
     
+    input.setAttribute('value', inputString);
+}
+
+function back(){
+    inputString = inputString.slice(0,-1);
     input.setAttribute('value', inputString);
 }
 
@@ -66,6 +74,52 @@ function sub() {
     input.setAttribute('value', inputString);
 }
 
+function divide() {
+    inputString += ' / ';
+    input.setAttribute('value', inputString);
+}
+
+function times() {
+    inputString += ' * ';
+    input.setAttribute('value', inputString);
+}
+
+function minus() {
+    inputString += ' - ';
+    input.setAttribute('value', inputString);
+}
+
+// End of Math Functions
+
 function equals() {
     console.log(eval(inputString));
 }
+
+// Special Symbols
+
+function percnt() {
+    inputString += '% ';
+    input.setAttribute('value', inputString);
+}
+
+function pi() {
+    inputString += '3.14';
+    input.setAttribute('value', inputString);
+}
+
+function dot() {
+    inputString += '.';
+    input.setAttribute('value', inputString);
+}
+
+function sqrt() {
+    inputString += "√",0;
+    input.setAttribute('value', inputString);
+}
+
+function power() {
+    inputString += '';
+    input.setAttribute('value', inputString);
+}
+
+// End of Special Symbols
