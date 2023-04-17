@@ -120,16 +120,17 @@ function dot() {
 }
 
 function sqrt() {
-    inputString += 'Math.sqrt(';
-    input.setAttribute('value', "√");
+    inputString = 'Math.sqrt(' + inputString + ")";
+    output.setAttribute('value', inputString);
+    equals();
+    // √
 }
 
+
 function power() {
-    inputString += 'Math.pow(';
-    input.setAttribute('value', inputString);
+    inputString = 'Math.pow(' + inputString + ", 2)";
+    output.setAttribute('value', inputString);
+    equals();
 }
 
 // End of Special Symbols
-
-// Output
-
