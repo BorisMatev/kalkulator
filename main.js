@@ -2,6 +2,10 @@ let inputString = "";
 
 let input = document.getElementById('input');
 
+let output = document.getElementById('output');
+
+output.innerHTML = "";
+
 function skoba() {
     inputString += ' (';
     input.setAttribute('value', inputString);
@@ -58,7 +62,7 @@ function zero() {
 
 // Math Functions
 
-function mod() {
+function clean() {
     inputString = "";
     
     input.setAttribute('value', inputString);
@@ -93,6 +97,7 @@ function minus() {
 
 function equals() {
     console.log(eval(inputString));
+    output.innerHTML = eval(inputString);
 }
 
 // Special Symbols
@@ -126,4 +131,3 @@ function power() {
 
 // Output
 
-let output = document.getElementById('output').innerHTML = console.log(eval(inputString));
