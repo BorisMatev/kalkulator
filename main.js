@@ -66,6 +66,8 @@ function clean() {
     inputString = "";
     
     input.setAttribute('value', inputString);
+
+    output.innerHTML = "";
 }
 
 function back(){
@@ -118,12 +120,12 @@ function dot() {
 }
 
 function sqrt() {
-    inputString += "√",0;
-    input.setAttribute('value', inputString);
+    inputString += 'Math.sqrt(';
+    input.setAttribute('value', "√");
 }
 
 function power() {
-    inputString += '';
+    inputString += 'Math.pow(';
     input.setAttribute('value', inputString);
 }
 

@@ -33,7 +33,8 @@ body{
     height: 50%;
     font-size: 30px;
     color: white;
-    text-align: right;
+    text-align: center;
+    padding-left: 170px;
 }
 
 .input{
