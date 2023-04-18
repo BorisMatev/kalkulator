@@ -120,15 +120,20 @@ function dot() {
 }
 
 function sqrt() {
+    const num = inputString;
     inputString = 'Math.sqrt(' + inputString + ")";
+    input.setAttribute('value', `√${ num }`);
     output.setAttribute('value', inputString);
     equals();
     // √
+
 }
 
 
 function power() {
+    const num = inputString;
     inputString = 'Math.pow(' + inputString + ", 2)";
+    input.setAttribute('value', `(${ num })2`);
     output.setAttribute('value', inputString);
     equals();
 }
