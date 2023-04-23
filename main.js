@@ -129,7 +129,6 @@ function sqrt() {
 
 }
 
-
 function power() {
     const num = inputString;
     inputString = 'Math.pow(' + inputString + ", 2)";
@@ -139,3 +138,60 @@ function power() {
 }
 
 // End of Special Symbols
+
+// let userInput = "";
+// let mathInput = [];
+// let br = 0;
+
+// const input = document.getElementById('input');
+// const output = document.getElementById('output');
+
+// function addToInput(body){
+//     userInput += body;
+    
+//     switch (body) {
+//         case "√":{
+//             mathInput.push("Math.sqrt(");
+//             br = 1;
+//             break;
+//         }
+//         case "^2":{
+//             let swap = mathInput.pop();
+//             mathInput.push(`Math.pow(${swap},2)`);
+//             br = 2;
+//             break;
+//         }
+//         default:{
+//             mathInput.push(body);
+//             chech();
+//             break;
+//         }
+//     }
+//     input.setAttribute('value', userInput);
+// }
+
+// function chech() {
+//     if (br == 1) {
+//         br = 0;
+//         mathInput.push(')');
+//     }
+// }
+
+// function equals() {
+//     console.log(mathInput)
+//     chech();
+//     output.innerHTML = Math.round(eval(mathInput.join('')) * 100) / 100;
+// }
+
+// function clean() {
+//     userInput = "";
+//     input.setAttribute('value', userInput);
+//     output.innerHTML = "";
+//     mathInput = [];
+// }
+
+// function back(){
+//     userInput = userInput.slice(0,-1);
+//     mathInput.pop();
+//     input.setAttribute('value', userInput);
+// }
